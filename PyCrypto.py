@@ -74,7 +74,7 @@ function to load file
 """
 def load_file():
     global key, fileName
-    text_file = tkFileDialog.askopenfile(filetypes =[('Text Files', '.txt', '.enc')]) #built in function
+    text_file = tkFileDialog.askopenfile(filetypes =[('Text Files', '.txt'),('Encrypted File', '.enc')]) #built in function
     if text_file.name != None: #if file was properly selected
         fileName = text_file.name #set the global variable filename to the selected file's name
 
@@ -113,5 +113,3 @@ dec_file_button.pack()
 
 #to start the GUI
 root.mainloop()
-
-    
